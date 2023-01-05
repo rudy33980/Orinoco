@@ -1,0 +1,68 @@
+body {
+    background-color: teal;
+}
+
+
+#descriptif {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture {
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
+    border: 5px red solid;
+    border-radius: 25px;
+}
+
+.title {
+    margin-top: 100px;
+    color: rgb(57, 19, 226);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    height: auto;
+    font-size: 60px;
+    background-color: yellow;
+    border-radius: 25px;
+    width: max-content;
+    padding: 10px;
+
+}
+
+.objectif {
+    /* margin: 0 auto; */
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    border-radius: 10px;
+    font-size: 50px;
+    color: red;
+    background-color: aqua;
+    margin-top: 50px;
+    border: 2px solid red;
+  
+}
+
+#lenses {
+    margin-top: 30px;
+}
+.item__content__settings__quantity {
+    
+    margin-top: 30px;
+}
+
+
+button:active {
+    scale: 1.5;
+    transform-box: translate(20px) rotate(90deg);
+}

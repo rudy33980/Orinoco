@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produit</title>
+    <script defer src="./JS/produit.js"></script>
+    <link rel="stylesheet" href="./style/produit.css">
 </head>
+
 <body>
-    <div id="description">
-       
+    <div id="descriptif">
+        <h1 class="title">Object sélectionné</h1>
 
     </div>
 
-    <script src="./JS/produit.js"></script>
+    <div class="item__content__settings">
+        <div class="item__content__settings__color">
+            <label for="lenses">Choisir un type de lentilles :</label>
+            <select name="lenses-select" id="lenses">
+                <option value="">--SVP, choisissez une lentille --</option>
+
+            </select>
+        </div>
+
+        <div class="item__content__settings__quantity">
+            <label for="itemQuantity">Nombre d'article(s) (1-100) :</label>
+            <input type="number" name="itemQuantity" min="1" max="100" value="0" id="quantity">
+        </div>
+    </div>
+
+    <div class="bouton">
+        <button>Envoyer</button>
+    </div>
 
 </body>
+
 </html>

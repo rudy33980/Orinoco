@@ -1,0 +1,24 @@
+body {
+    background: yellowgreen;
+}
+
+section {
+    background-color: teal;
+    margin: 200px auto;
+
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    color: red;
+}
