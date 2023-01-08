@@ -6,6 +6,7 @@ const produitId = urlParams.get('id');
 let itemPrice = 0;
 let imgUrl = 0;
 let altText = 0;
+let nameItem = 0;
 
 // description // "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 // imageUrl // "http://localhost:3000/images/vcam_1.jpg"
@@ -24,6 +25,7 @@ function handleData(data) {
     const { description, imageUrl, lenses, name, price, _id } = data;
     itemPrice = price;
     imgUrl = imageUrl;
+    nameItem = name;
 
     makeImage(imageUrl);
     makeDescription(description)
@@ -99,7 +101,8 @@ function saveOrder(lense, quantity) {
         lense: lense,
         quantity: Number(quantity),
         price: itemPrice,
-        imageUrl: imgUrl
+        imageUrl: imgUrl,
+        name: nameItem
 
     }
     localStorage.setItem(produitId, JSON.stringify(data));

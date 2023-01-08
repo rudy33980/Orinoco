@@ -1,10 +1,10 @@
 body {
-    background: yellowgreen;
+    background: rgb(201, 142, 94);
 }
 
 section {
     background-color: teal;
-    margin: 200px auto;
+    margin: 100px auto;
 
 }
 
@@ -20,5 +20,46 @@ h1 {
     text-align: center;
     margin-top: 100px;
     font-size: 50px;
-    color: red;
+    color: rgb(196, 52, 164);
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border: 5px red solid;
+    border-radius: 25px;
+}
+
+#cart__items {
+
+    text-align: center;
+
+}
+.card__item {
+ margin-top: 70px;
+}
+
+.card__item__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__item__content__description {
+    background-color: rgb(216, 115, 115);
+    width: 30%;
+    border-radius: 25px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+.cart__order {
+    background: blueviolet;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
 }
